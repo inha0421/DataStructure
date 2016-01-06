@@ -6,7 +6,7 @@ struct point {
 };
 
 int main (void){
-	struct point p1;
+	struct point *p1;
 	p1.x=1;
 	p1.y=2;
 
