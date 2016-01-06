@@ -10,15 +10,22 @@ struct point {
 int main (void){
 	struct point *p1 = (struct point*) malloc (sizeof (struct point));
 	struct point *p2= (struct point*) malloc (sizeof (struct point));
-	p1->x=1;
-	p1->y=2;
-	p2->x=1;
-	p2->y=2;
+	struct point *temp= NULL;
 
-	p1-> next = p2;
-	p2-> next = p1;
+	p1 -> x=1;
+	p1 -> y=2;
+	p2 -> x=3;
+	p2 -> y=4;
 
- 	printf("%d %d\n",p1->next->x, p1->next->y);
- 	printf("%d %d\n",p2->next->x, p2->next->y);
+	temp = p1;
+ 	printf("%d %d\n",temp->x, temp->y);
+	
+	temp = p2;
+
+ 	printf("%d %d\n",temp->x, temp->y);
+// 	printf("%d %d\n",p1->next->x, p1->next->y);
+//	printf("%d %d\n",p2->next->x, p2->next->y);
+
+
 	return 0;
 }
