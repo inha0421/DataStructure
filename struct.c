@@ -21,8 +21,8 @@ int main (void){
  	printf("%d %d\n",temp->x, temp->y);
 	
 	temp = p2;
-
  	printf("%d %d\n",temp->x, temp->y);
+
 // 	printf("%d %d\n",p1->next->x, p1->next->y);
 //	printf("%d %d\n",p2->next->x, p2->next->y);
 
