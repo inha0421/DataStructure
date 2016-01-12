@@ -7,7 +7,7 @@ typedef int element;
 typedef struct ListNode {
 	element data;
 	struct ListNode *link;
-}listNode;
+}ListNode;
 
 
 void error (char *message){
